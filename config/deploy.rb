@@ -17,8 +17,17 @@ role :db,  "teachcast.net", :primary => true
 
 set :deploy_via, :remote_cache
 
+namespace :passenger do
+  task :restart do
+     run "touch #{current_path}/tmp/restart.txt"
+  end
+end
+
 task :after_update_code do
   run "ln -nfs #{deploy_to}/shared/config/database.yml #{release_path}/config/database.yml"
   run "ln -nfs #{deploy_to}/shared/config/boot.rb #{release_path}/vendor/plugins/community_engine/engine_config/boot.rb"
   run "ln -nfs #{deploy_to}/shared/photos #{release_path}/public/photos"
 end
+
+after :deploy, "passenger:restart"
+
