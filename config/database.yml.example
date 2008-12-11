@@ -1,0 +1,7 @@
+production:
+  adapter: mysql
+  encoding: utf8
+  database: atlrug_prod
+  username: atlruguser
+  password: atlrugpassword 
+  socket: /var/run/mysqld/mysqld.sock
