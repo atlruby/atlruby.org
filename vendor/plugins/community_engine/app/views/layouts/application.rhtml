@@ -58,7 +58,6 @@
   							</form>
   							<!-- SiteSearch Google -->						
   						</div>
-						
   					<ul id="nav">
   						<% Category.find(:all).each do |c| %>
   							<%= topnav_tab (c.nav_text || c.name), {:url => category_path(c), :section => c.name} %>
