@@ -26,7 +26,7 @@
  		<div id="custom-doc" class="yui-t<%= @sidebar_right ? '6' : '3' %>">
 			
 			<div id="hd">
-				<a href="/" title="<%= AppConfig.community_name %> Home" id="community-logo" class="left" ><%= AppConfig.community_name %></a>
+			<%= link_to image_tag('gem-small.png', :plugin => "community_engine"), '/', {:class => "left"} %>
       
 				  <div class="toolbar">
   						<div id="search_and_login">

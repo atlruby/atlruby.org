@@ -29,7 +29,7 @@ a {
 	}
 a:hover { 
 	text-decoration:underline; 
-	color: #2B0600;
+	color: #AB261B;
 	}
 img { vertical-align:middle; }
 .gray {	color:#828282;}
@@ -329,18 +329,20 @@ div.padded {
 		
 /* HEADER */
 div#hd {
-	background:#782b2f ;
+	background:#222 ;
+	background-repeat: no-repeat;
 	display:block;
 	height:135px;	
 	*height:1%;
 	}
 	div#hd a#community-logo {
 		height: 58px;
-		margin-left: 20px;
-		font: bold 36px 'Trebuchet MS', Tahoma, Arial, Sans-serif;
+		margin-left: 110px;
+		margin-top: 35px;
+		font: bold 50px 'Trebuchet MS', Tahoma, Arial, Sans-serif;
 		letter-spacing: -1px;
 		line-height:65px;
-		color:#C9C9C9;
+		color:#AA251A;
 		top: 30px;
 		}
 	div#hd div#header_strip {
@@ -356,7 +358,7 @@ div#hd {
 		font-size:.9em;
 		padding-right:10px;
 		text-align:right;
-		width:735px;
+		width:615px;
 		height: 135px;
 		}
 		div.toolbar div#search_and_login {
