@@ -19,8 +19,7 @@
   
   .rounded.blue_sidebar
     .padded
-      %h2 What's Hot?  
-      =link_to "Suggest a Topic", "http://atlrug.uservoice.com/pages/suggested_topics"
+      %h2== What's Hot? #{link_to '(Suggest a Topic)', 'http://atlrug.uservoice.com/pages/suggested_topics'}
       %ul.sidebar_posts
         -@popular_posts.each do |post|
           %li=link_to truncate(post.title, 75), user_post_path(post.user, post)
