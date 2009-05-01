@@ -1,4 +1,6 @@
 # Methods added to this helper will be available to all templates in the application.
+require 'rubygems'
+require 'active_support'
 module ApplicationHelper
  def second_wednesday_in_month(target)
   first_weekday = Date.new(target.year, target.month, 1).wday
