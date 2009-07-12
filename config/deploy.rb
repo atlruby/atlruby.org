@@ -11,9 +11,9 @@ set :ssh_options, {:forward_agent => true }
 set :user, "deploy"
 set :use_sudo, false
 
-role :app, "teachcast.net"
-role :web, "teachcast.net"
-role :db,  "teachcast.net", :primary => true
+role :app, "dev.skiptree.com"
+role :web, "dev.skiptree.com"
+role :db,  "dev.skiptree.com", :primary => true
 
 set :deploy_via, :remote_cache
 
