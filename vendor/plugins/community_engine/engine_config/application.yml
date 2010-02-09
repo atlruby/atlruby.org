@@ -5,7 +5,7 @@ support_email:  "registration@atlruby.org"
 meta_description: 'A community site for the Atlanta Ruby User group featuring presentations and discussions presented to and by our members'
 meta_keywords: 'Atlanta, ruby, rails, hobby, professional'
 sections_enabled: ['photos', 'posts', 'clippings', 'contests', 'categories', 'events']
-show_advertising: true
+show_advertising: false
 closed_beta_mode: false
 
 # The label you use for 'staff' writers (featured writer, staff, pro, etc.)

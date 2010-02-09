@@ -10,7 +10,8 @@
 .yui-b.sidebar
   =render :partial => 'base/homepage_nav'
 
-  - if AppConfig.show_advertising
+  - # Deactivated show_advertising because it is brokended
+  - if true # AppConfig.show_advertising
     .centered#featured_ads
       %small.gray
         This month's sponsor!
