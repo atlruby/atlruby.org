@@ -1,0 +1,9 @@
+--- 
+- :version: 2.0.2
+  :name: rails
+- :version: 2.0.9
+  :name: haml
+- :version: 0.8.1
+  :name: hpricot
+- :version: 2.9.2
+  :name: rmagick
