@@ -5,3 +5,32 @@ for more information on community engine see http://www.missingmethod.com/commun
 you can find setup instructions under vendor/plugins/community_engine/README
 
 please contact an organizer if you are interested in helping with the site.
+
+== Making changes to the server
+
+To add new packages or make configuration changes on the server, please
+edit the following files. They contain examples for common configurations.
+If you have any questions about how to make a particular change, the Rails
+Machine staff is always ready to help.
+
+- config/moonshine.yml
+
+  Use this file to manage configuration related to deploying and
+  running the app: domain name, git repos, package dependencies for
+  gems, and more.
+
+- config/gems.yml
+
+  This file controls the gems installed on the server
+
+- app/manifests/application_manifest.rb
+
+  Use this to manage the configuration of everything else on the
+  server: define the server 'stack', cron jobs, mail aliases,
+  configuration files
+
+== Deploying
+
+On every deployment, Moonshine will make sure that all gems, packages, 
+and configurations are as specified in <tt>moonshine.yml</tt> and in the
+manifest.

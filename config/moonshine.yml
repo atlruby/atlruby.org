@@ -74,3 +74,5 @@
 # - vendor/plugins/moonshine/lib/moonshine/manifest/rails/templates/moonshine.cnf.erb 
 :mysql:
   :innodb_buffer_pool_size: 128M
+:scout:
+  :agent_key: c59ececc-7d50-4d2e-9a66-07ba3b85f797
